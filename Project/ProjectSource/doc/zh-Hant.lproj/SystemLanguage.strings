@@ -1,0 +1,17 @@
+/* 
+  SystemLanguage.strings
+  hhcszgd
+
+  Created by WY on 2017/10/31.
+  Copyright © 2017年 com.16lao. All rights reserved.
+*/
+"title" = "system_traditional_title";
+"country_code" = "122";
+"language_identifier" ="zh-Hant";
+
+
+
+"tabbar_item1_title" = "發現.尋找";
+"tabbar_item2_title" = "互動";
+"tabbar_item5_title" = "公开约定";
+"tabbar_item3_title" = "我的";

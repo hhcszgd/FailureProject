@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultDetailAlertView" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="payPrice" destination="B6k-Ge-Epw" id="WMv-S4-ZQe"/>
+                <outlet property="returnPrice" destination="rFJ-AQ-POR" id="1NN-sL-0Yh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已与对方终止约定，并" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zB-F6-2Hq">
+                    <rect key="frame" x="15" y="15" width="157.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已与对方终止约定，并" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6k-Ge-Epw">
+                    <rect key="frame" x="109" y="47" width="157.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.89803921568627454" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已与对方终止约定，并" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-AQ-POR">
+                    <rect key="frame" x="109" y="79" width="157.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.8980392157" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNz-Iw-cOU">
+                    <rect key="frame" x="207.5" y="111" width="127.5" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="确 定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="RC1-gN-cNb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69y-LR-cxZ">
+                    <rect key="frame" x="40" y="111" width="127.5" height="40"/>
+                    <color key="backgroundColor" red="0.38431372549999998" green="0.57254901960000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0QH-G3-DHr"/>
+                    </constraints>
+                    <state key="normal" title=" 取 消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleAction:" destination="-1" eventType="touchUpInside" id="zFX-t1-MPC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fNz-Iw-cOU" firstAttribute="height" secondItem="69y-LR-cxZ" secondAttribute="height" id="2Yh-yL-7aG"/>
+                <constraint firstItem="fNz-Iw-cOU" firstAttribute="width" secondItem="69y-LR-cxZ" secondAttribute="width" id="6SN-AV-p1n"/>
+                <constraint firstItem="B6k-Ge-Epw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9gY-XD-JoC"/>
+                <constraint firstItem="rFJ-AQ-POR" firstAttribute="top" secondItem="B6k-Ge-Epw" secondAttribute="bottom" constant="15" id="9jy-4c-SAz"/>
+                <constraint firstItem="fNz-Iw-cOU" firstAttribute="top" secondItem="rFJ-AQ-POR" secondAttribute="bottom" constant="15" id="A92-Qc-HUo"/>
+                <constraint firstItem="fNz-Iw-cOU" firstAttribute="leading" secondItem="69y-LR-cxZ" secondAttribute="trailing" constant="40" id="Ad5-Gg-zYu"/>
+                <constraint firstAttribute="trailing" secondItem="fNz-Iw-cOU" secondAttribute="trailing" constant="40" id="GtY-FU-6gw"/>
+                <constraint firstItem="69y-LR-cxZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="PEO-Bf-9SG"/>
+                <constraint firstItem="69y-LR-cxZ" firstAttribute="top" secondItem="rFJ-AQ-POR" secondAttribute="bottom" constant="15" id="Qwx-Ap-CXJ"/>
+                <constraint firstItem="B6k-Ge-Epw" firstAttribute="top" secondItem="2zB-F6-2Hq" secondAttribute="bottom" constant="15" id="RK5-AD-y8f"/>
+                <constraint firstItem="2zB-F6-2Hq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lUH-JS-Ayo"/>
+                <constraint firstItem="2zB-F6-2Hq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="thu-wj-TSl"/>
+                <constraint firstItem="fNz-Iw-cOU" firstAttribute="leading" secondItem="69y-LR-cxZ" secondAttribute="trailing" constant="40" id="uOE-98-Yx1"/>
+                <constraint firstItem="rFJ-AQ-POR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zKz-BW-LEa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

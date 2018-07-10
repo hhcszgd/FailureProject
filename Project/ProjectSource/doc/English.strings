@@ -1,0 +1,27 @@
+/* 
+  English.strings
+  hhcszgd
+
+  Created by WY on 2017/10/31.
+  Copyright © 2017年 com.16lao. All rights reserved.
+*/
+"title" = "custom_english_title";
+"country_code" = "119";
+"language_identifier" = "en_us";
+
+"tabbar_item1_title" = "home";
+"tabbar_item2_title" = "partner";
+"tabbar_item5_title" = "public_apoint";
+"tabbar_item4_title" = "appoint";
+"tabbar_item3_title" = "profile";
+//"send" = "send";
+///*关于我*/
+//"abhoutMe" = "AboutMe";
+///*成就*/
+//"achievement" = "achievement";
+///*内容*/
+//"content" = "content";
+//
+//
+/////确认按钮
+//"confirm" = "confirm";

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutWeVC" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="top" destination="7jU-pb-Cjp" id="ahL-IJ-aok"/>
+                <outlet property="topTitle" destination="CUf-Na-vHq" id="9Pd-gB-Wem"/>
+                <outlet property="versionLabel" destination="2kX-nZ-dg2" id="aff-AS-Dho"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-Na-vHq">
+                    <rect key="frame" x="15" y="80" width="345" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.38431372549999998" green="0.57254901960000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoset" translatesAutoresizingMaskIntoConstraints="NO" id="go5-tS-Gen">
+                    <rect key="frame" x="118" y="110" width="139" height="139"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kX-nZ-dg2">
+                    <rect key="frame" x="15" y="264" width="345" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright©ybt.com All Right Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYx-59-cWu">
+                    <rect key="frame" x="15" y="283.5" width="345" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CUf-Na-vHq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="7T1-wF-VxQ"/>
+                <constraint firstItem="CUf-Na-vHq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="7jU-pb-Cjp"/>
+                <constraint firstItem="go5-tS-Gen" firstAttribute="top" secondItem="CUf-Na-vHq" secondAttribute="bottom" constant="30" id="9WP-qP-hqZ"/>
+                <constraint firstItem="ZYx-59-cWu" firstAttribute="top" secondItem="2kX-nZ-dg2" secondAttribute="bottom" constant="5" id="Dvc-em-mPN"/>
+                <constraint firstItem="2kX-nZ-dg2" firstAttribute="top" secondItem="go5-tS-Gen" secondAttribute="bottom" constant="15" id="UB6-Vj-BFb"/>
+                <constraint firstItem="ZYx-59-cWu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="bx9-mb-Vov"/>
+                <constraint firstAttribute="trailing" secondItem="ZYx-59-cWu" secondAttribute="trailing" constant="15" id="cK4-fq-34U"/>
+                <constraint firstItem="2kX-nZ-dg2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cj7-Sn-kUG"/>
+                <constraint firstItem="go5-tS-Gen" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="elr-I5-pkZ"/>
+                <constraint firstAttribute="trailing" secondItem="CUf-Na-vHq" secondAttribute="trailing" constant="15" id="tPM-Ke-hBN"/>
+                <constraint firstAttribute="trailing" secondItem="2kX-nZ-dg2" secondAttribute="trailing" constant="15" id="xkW-4F-2hO"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoset" width="139" height="139"/>
+    </resources>
+</document>

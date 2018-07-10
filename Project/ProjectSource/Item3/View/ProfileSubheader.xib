@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileSubheader" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="freezingBtn" destination="79W-zb-Ba8" id="XWT-5n-sEg"/>
+                <outlet property="withDrawBtn" destination="fEz-gc-Msu" id="cFT-D5-pGh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79W-zb-Ba8" customClass="ProfileBtn" customModule="Project" customModuleProvider="target">
+                    <rect key="frame" x="50" y="0.0" width="82" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="MSd-p2-q78"/>
+                        <constraint firstAttribute="width" constant="82" id="NSp-pV-PZH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <state key="normal" title="冻结报酬" image="freezingamount">
+                        <color key="titleColor" red="0.38431372549999998" green="0.57254901960000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="freezingAction:" destination="-1" eventType="touchUpInside" id="Fvf-at-kBf"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1be-0w-CtS" userLabel="lineView">
+                    <rect key="frame" x="187" y="8" width="1" height="64"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.89019607840000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="xUb-wX-EuW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-gc-Msu" customClass="ProfileBtn" customModule="Project" customModuleProvider="target">
+                    <rect key="frame" x="245" y="0.0" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NCV-wJ-CVD"/>
+                        <constraint firstAttribute="width" constant="80" id="Vsf-5o-2RB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="提现" image="withdrawals">
+                        <color key="titleColor" red="0.38431372549999998" green="0.57254901960000004" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="withdrawAction:" destination="-1" eventType="touchUpInside" id="eht-3i-DKx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fEz-gc-Msu" secondAttribute="bottom" id="31Y-6A-5iI"/>
+                <constraint firstItem="79W-zb-Ba8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5qQ-En-A4E"/>
+                <constraint firstItem="fEz-gc-Msu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BI4-35-a6O"/>
+                <constraint firstAttribute="trailing" secondItem="fEz-gc-Msu" secondAttribute="trailing" constant="50" id="Zwu-2Z-WvP"/>
+                <constraint firstItem="1be-0w-CtS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="avI-CG-wTx"/>
+                <constraint firstItem="1be-0w-CtS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="csx-3R-8Nl"/>
+                <constraint firstItem="79W-zb-Ba8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="f54-Sf-g5x"/>
+                <constraint firstAttribute="bottom" secondItem="1be-0w-CtS" secondAttribute="bottom" constant="8" id="fnE-KE-wbI"/>
+                <constraint firstItem="1be-0w-CtS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o82-OV-jvv"/>
+                <constraint firstAttribute="bottom" secondItem="79W-zb-Ba8" secondAttribute="bottom" id="wSj-4m-a5c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="freezingamount" width="24" height="23"/>
+        <image name="withdrawals" width="20" height="20"/>
+    </resources>
+</document>
